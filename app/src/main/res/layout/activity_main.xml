@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btn_fromArray"
         android:layout_width="wrap_content"
@@ -13,10 +14,18 @@
         android:layout_marginTop="64dp"
         android:text="From Array"
         android:textAllCaps="false"
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btn_just"
         android:layout_width="wrap_content"
@@ -71,4 +80,6 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_repeat"
         app:layout_constraintStart_toStartOf="@+id/btn_repeat"
         app:layout_constraintTop_toBottomOf="@+id/btn_repeat" />
+=======
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
 </androidx.constraintlayout.widget.ConstraintLayout>

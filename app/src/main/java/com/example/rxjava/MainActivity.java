@@ -2,12 +2,17 @@ package com.example.rxjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import com.example.rxjava.databinding.ActivityMainBinding;
+=======
+import android.os.Bundle;
+import android.util.Log;
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,18 +29,26 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
     private Disposable disposable;
+<<<<<<< HEAD
     private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+=======
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
         Observable<User> observable=getObservableUsers();
         Observer<User> observer=getObserverUser();
 
         observable.subscribeOn(Schedulers.io())//phát ra dữ liệu
                 .observeOn(AndroidSchedulers.mainThread())//nhận dữ liệu
                 .subscribe(observer) ;//lấy nghe
+<<<<<<< HEAD
 
         binding.btnJust.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,DeferActivity.class));
             }
         });
+=======
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
     }
     //nhận dữ liệu đc phát ra bởi observable
     private Observer<User> getObserverUser(){

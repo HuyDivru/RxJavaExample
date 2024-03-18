@@ -13,6 +13,7 @@
         android:theme="@style/Theme.RxJava"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".DeferActivity"
             android:exported="false">
             <meta-data
@@ -41,6 +42,8 @@
                 android:value="" />
         </activity>
         <activity
+=======
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
             android:name=".JustActivity"
             android:exported="false">
             <meta-data
@@ -49,7 +52,17 @@
         </activity>
         <activity
             android:name=".FromArrayActivity"
+<<<<<<< HEAD
             android:exported="false">
+=======
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -63,6 +76,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,6 +84,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+=======
+            android:exported="false">
+>>>>>>> c07b5a720ccd25b00fb518d4f9537dae6cbf192d
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
